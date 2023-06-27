@@ -13,18 +13,14 @@
     <title>Serlokas</title>
   </head>
   <!--Body dalyje yra pateikiamas visas turinys matomas vartotojui-->
-  <body>
+  <body style="background-color: lightgray">
     <!--Main tagas reprezentuoja pagrindini turini-->
-    <main
-      style="
-        background-color: red;
-        width: 50%;
-        margin-left: 25%;
-        margin-top: 100px;
-      "
-    >
-      <img src="#" alt="Serlokas ruko pypke menesienoje" />
-      <div>Tekstai</div>
+    <!-- Tevinio elemento aukstis yra toks koks yra didziausios jo ne floatinamu vaikiniu elementu aukstis -->
+    <!-- Jeigu visi vaikiniai elementai yra floatinami, tevinis elementas praranda auksti, todel jam reikalingas display inline-block, 
+      kad ji vel matytume -->
+    <main style="background-color: red; width: 50%; margin-left: 25%; margin-top: 100px; display: inline-block;">
+      <img src="#" style="width: 35%; background-color: blue; float: left;" alt="Serlokas ruko pypke menesienoje" />
+      <div style="background-color: blueviolet; width:50%; float: right;">Tekstai</div>
     </main>
   </body>
 </html>
